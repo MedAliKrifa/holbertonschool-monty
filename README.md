@@ -42,8 +42,7 @@ An excellent example of a queue is a line of students in the food court of the U
 
 
 
-project done by:
+### project done by:
 
-Med Ali Krifa
-Youssef Sahbani
+Med Ali Krifa and Youssef Sahbani
 
