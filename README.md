@@ -21,15 +21,19 @@ An excellent example of a queue is a line of students in the food court of the U
 # FIFO & LILO and LIFO & FILO
 
 
-### Queue: First In First Out (FIFO): The first object into a queue is the first object to leave the queue, used by a queue.
+### Queue: First In First Out (FIFO):
+ The first object into a queue is the first object to leave the queue, used by a queue.
 
-### Stack: Last In First Out (LIFO): The last object into a stack is the first object to leave the stack, used by a stack
+### Stack: Last In First Out (LIFO):
+ The last object into a stack is the first object to leave the stack, used by a stack
 
-#OR
+# OR
 
-### Stack: Last In First Out (FILO): The First object or item in a stack is the last object or item to leave the stack.
+### Stack: Last In First Out (FILO):
+ The First object or item in a stack is the last object or item to leave the stack.
 
-### Queue: Last In First Out (LILO): The last object or item in a queue is the last object or item to leave the queue.
+### Queue: Last In First Out (LILO):
+ The last object or item in a queue is the last object or item to leave the queue.
 
 
 
