@@ -7,6 +7,7 @@
  *
  * Return: void
  */
+
 void swap(stack_t **stack, unsigned int line_cnt)
 {
 	stack_t *tmp = NULL;
