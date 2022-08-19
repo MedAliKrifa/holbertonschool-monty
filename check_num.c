@@ -7,16 +7,16 @@
  */
 int digits(char *value)
 {
-    unsigned int i;
+	unsigned int i;
 
-    if (value == NULL)
-        return (0);
-    for (i = 0; value[i] != '\0'; i++)
-    {
-        if (value[0] == '-' && i == 0)
-            continue;
-        if (isdigit(value[i]) == 0)
-            return (0);
-    }
-    return (1);
+	if (value == NULL)
+		return (0);
+	for (i = 0; value[i] != '\0'; i++)
+	{
+		if (value[0] == '-' && i == 0)
+			continue;
+		if (isdigit(value[i]) == 0)
+			return (0);
+	}
+	return (1);
 }

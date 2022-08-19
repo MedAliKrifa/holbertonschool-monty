@@ -7,14 +7,14 @@
  **/
 void get_func(char *func_name, unsigned int line_num, stack_t **stack)
 {
-    instruction_t code[] = {{"pop", pop}, {"pint", pint}, {"swap", swap}, {NULL, NULL}};
-    unsigned int i;
+	instruction_t code[] = {{"push", push}, {"pall", pall}, {"pop", pop}, {"pint", pint}, {"swap", swap},  {NULL, NULL}};
+	unsigned int i;
 
-    for (i = 0; code[i].opcode != NULL; i++)
-    {
-        if (strcmp(code[i].opcode, func_name) == 0)
-        {
-            code[i].f(stack, line_num);
-        }
-    }
+	for (i = 0; code[i].opcode != NULL; i++)
+	{
+		if (strcmp(code[i].opcode, func_name) == 0)
+		{
+			code[i].f(stack, line_num);
+		}
+	}
 }
