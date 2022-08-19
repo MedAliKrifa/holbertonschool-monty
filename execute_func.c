@@ -15,7 +15,7 @@ void execute_func(char *line, unsigned int line_num, stack_t **stack)
     {
         value = strtok(NULL, " \t\a\n");
         valid_or_not = true(func_name);
-        if (valid_or_not != TRUE)
+        if (valid_or_not != VALID)
         {
             fprintf(stderr, "L%d: unknown instruction %s\n", line_num, line);
             free_stack(stack);
