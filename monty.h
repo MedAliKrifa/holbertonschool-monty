@@ -1,9 +1,15 @@
 #ifndef MONTY_H
 #define MONTY_H
-#include <stdio.h>
-#include <stdlib.h>
+#define _GNU_SOURCE
+#include <fcntl.h>
+#include <sys/types.h>
+#include <sys/stat.h>
 #include <string.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <stdio.h>
 #include <ctype.h>
+#define TRUE 1
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
@@ -34,10 +40,13 @@ typedef struct instruction_s
     char *opcode;
     void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
+char *value;
+void execute_func(char *line, unsigned int line_number, stack_t **stack);
+int true(char *func_name);
+void free_stack(stack_t **stack);
+void get_func(char *func_name, unsigned int line_number, stack_t **stack);
 
 void pint(stack_t **stack, unsigned int line_cnt);
 void pop(stack_t **stack, unsigned int line_cnt);
 void swap(stack_t **stack, unsigned int line_cnt);
-
-
 #endif
