@@ -13,7 +13,7 @@ void push(stack_t **stack, unsigned int line_number)
 
     if (stack == NULL)
         return;
-    if (!check_numb(value))
+    if (!digits(value))
     {
         fprintf(stderr, "L%d: usage: push integer\n", line_number);
         free_stack(stack);
