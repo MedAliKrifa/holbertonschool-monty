@@ -9,7 +9,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <ctype.h>
-#define TRUE 1
+#define VALID 1
+#define PUSH 0
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
@@ -45,8 +46,10 @@ void execute_func(char *line, unsigned int line_number, stack_t **stack);
 int true(char *func_name);
 void free_stack(stack_t **stack);
 void get_func(char *func_name, unsigned int line_number, stack_t **stack);
+int digits(char *value);
 
-void pint(stack_t **stack, unsigned int line_cnt);
+void push(stack_t **stack, unsigned int line_num);
+void pint(stack_t **stack, unsigned int line_num);
 void pop(stack_t **stack, unsigned int line_cnt);
 void swap(stack_t **stack, unsigned int line_cnt);
 #endif
