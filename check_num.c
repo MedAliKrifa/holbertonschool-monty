@@ -1,7 +1,7 @@
 
 #include "monty.h"
 /**
- * check_numb - checks if data is only composed of digits
+ * digits - checks if data is only composed of digits
  * @value: string to check
  * Return: 0 on failure or 1 on success
  */

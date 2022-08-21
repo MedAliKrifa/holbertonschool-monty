@@ -1,8 +1,8 @@
 #include "monty.h"
 /**
- * execute_function - to execute function
+ * execute_func - to execute function
  * @line: line
- * @line_number: number of the line
+ * @line_num: number of the line
  * @stack: stack
  **/
 void execute_func(char *line, unsigned int line_num, stack_t **stack)
